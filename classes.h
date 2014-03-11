@@ -30,6 +30,8 @@ private:
 	color top = color.NONE;		//  a rotation.
 	color down = color.NONE;
 
+	void setColor(side, color);	// sets the color of one side
+
 public:
 	Piece(Piece*);						// copy constructor
 	Piece(Cube*);						// constructor for the center piece
@@ -47,3 +49,4 @@ private:
 public:
 	Cube();				// standard constructor--the values of the pieces will be set later
 	Cube(Cube*);			// copy constructor
+};
